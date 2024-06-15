@@ -1,0 +1,193 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Overpass', sans-serif;
+    color: #272734;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* Encabezado */
+.header {
+    height: 150px;
+    background-color: #272734;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* Sección de presentación */
+.hero {
+    height: 220px; /* Reducimos la altura */
+    background-color: #434354;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 26px; /* Reducimos el tamaño del texto */
+    line-height: 1.4em;
+    color: white;
+}
+
+/* Sección de portafolio */
+.portfolio {
+    background-color: #F5F5F5;
+    padding: 25px;
+    text-align: center; /* Centramos el texto */
+}
+
+.project {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* Añadimos espacio entre los proyectos */
+    padding: 25px; /* Aumentamos el espacio interno */
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centramos verticalmente */
+    max-width: 900px; /* Aumentamos el ancho máximo */
+    margin: 0 auto; /* Centramos horizontalmente */
+}
+
+.project-details {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left; /* Alineamos el texto a la izquierda */
+    margin-top: 20px; /* Espacio arriba del contenido */
+}
+
+.project-details h3 {
+    font-size: 28px; /* Aumentamos el tamaño del título */
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    color: grey;
+    margin-bottom: 15px; /* Espacio adicional */
+}
+
+.project-imageContainer {
+    width: 100%;
+    max-width: 600px; /* Aumentamos el ancho máximo de la imagen */
+    margin-top: 20px; /* Espacio arriba de la imagen */
+}
+
+.project-imageContainer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Divisor */
+.divider {
+    border-bottom: 1px solid lightgray;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+/* Sección de contacto */
+.contact {
+    background-color: #434354;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.contact h3 {
+    margin-right: 20px; /* Ajusta el margen a la derecha del título "Contactame" */
+}
+
+.social {
+    display: inline-block;
+}
+
+.social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.form-email {
+    display: flex;
+    align-items: center;
+}
+
+.form-email input[type="email"] {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 3px; /* Ajustamos el espacio en la parte inferior */
+    background-color: #EFDBD0;
+    background-image: url('../res/images/email.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-size: 16px;
+}
+
+.form-email button {
+    background-color: #9E8181;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #272734;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
